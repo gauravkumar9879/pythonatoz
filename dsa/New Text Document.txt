@@ -1,0 +1,24 @@
+class Dequeue(object):
+    def __init__(self):
+        self.items = []
+    def isEmpty(self):
+        return len(self.items) == 0
+    def add_front(self,e):
+        self.items.insert(0,e)
+    def add_rear(self,e):
+        self.items.append(e)
+    def remove_front(self):
+        self.items.pop(0)
+    def remove_rear(self):
+        self.items.pop()
+    def size(self):
+        return len(self.items)
+    pass
+
+deq =Dequeue()
+deq.size()
+deq.add_front(2)
+deq.add_front(1)
+deq.add_rear(3)
+deq.remove_front()
+
